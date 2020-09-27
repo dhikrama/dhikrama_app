@@ -1,3 +1,5 @@
+import 'package:dhikrama_app/presentation/style/container_style.dart';
+import 'package:dhikrama_app/presentation/style/text_style.dart';
 import 'package:division/division.dart';
 import 'package:flutter/material.dart';
 
@@ -81,7 +83,66 @@ class _FormLoginStyleState extends State<FormLoginStyle> {
                     },
                   ),
           ),
-          Txt('Submit', style: submitButtonStyle),
+          Txt('Masuk', style: submitButtonStyle),
+          SizedBox(
+            height: 15,
+          ),
+          Container(
+            child: Txt(
+              'belum Punya akun? Daftar Sekarang',
+              style: textStyle.clone()..italic(),
+            ),
+          ),
+          SizedBox(
+            height: 25,
+          ),
+          Container(
+            child: Txt(
+              'Atau masuk dengan',
+              style: textStyle.clone()..fontSize(15),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          ButtonMediaSocial()
+        ],
+      ),
+    );
+  }
+}
+
+class ButtonMediaSocial extends StatelessWidget {
+  const ButtonMediaSocial({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SizedBox(
+            width: 20,
+          ),
+          Parent(
+              style: parentStyle.clone()
+                ..background.color(Colors.blue)
+                ..elevation(5)
+                ..width(120)
+                ..height(40)
+                ..background.image(path: 'assets/icons/google.png')),
+          SizedBox(
+            width: 20,
+          ),
+          Parent(
+              style: parentStyle.clone()
+                ..border(all: 2, color: Colors.blue)
+                ..elevation(5, opacity: .4)
+                ..width(120)
+                ..height(40)
+                ..background.image(path: 'assets/icons/facebook.png'))
         ],
       ),
     );

@@ -40,7 +40,7 @@ class ImageBackground extends StatelessWidget {
         Container(
           height: 400,
           child: Image.asset(
-            'lib/images/worker.png',
+            'assets/images/worker.png',
           ),
         ),
       ],
