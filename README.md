@@ -1,10 +1,14 @@
 # dhikrama_app
 
-A new Flutter project.
+Ini adalah project iseng.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Di bangun menggunakan flutter.
+
+## Penggunaan
+
+Masih belum :p
 
 A few resources to get you started if this is your first Flutter project:
 
